@@ -150,4 +150,14 @@ The main algorithm parameters are defined near the beginning of `fdog.c`:
 | `RHO` | 0.99 | Relative weight of the wider Gaussian. |
 | `SIGMA_M` | 3.0 | Smoothing distance along the edge flow. |
 | `PHI` | 4.0 | Steepness of the final soft threshold. |
-| `EPSILON
+| `EPSILON` | -0.02 | Threshold controlling the number of detected lines. |
+
+These parameters can be modified and the program recompiled to experiment with different stylization results.
+
+## References
+
+Winnemöller, H., Kyprianidis, J. E., and Olsen, S. C. (2012).
+
+*XDoG: Advanced Image Stylization with eXtended Difference-of-Gaussians.*
+
+The implementation is based on the flow-guided Difference of Gaussians approach and its underlying concepts.
